@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+(2..15).each do |o|
+
+  $stderr.reopen("qtrNewton-#{o}.txt", "w")
+  
+  (6..10).each do |r|
+    $stderr.print "Generating Newton order #{o} fractal as #{2**r}x#{2**r} image:"
+    $stderr.print "\n"
+    $stderr.flush
+    %x[time @CMAKE_BINARY_DIR@/bin/qtrNewtonWriter-st #{o} #{2**r} #{2**r} qtrNewton-#{o}-st-#{2**r}x#{2**r}.png]
+    %x[time @CMAKE_BINARY_DIR@/bin/qtrNewtonWriter-mt #{o} #{2**r} #{2**r} qtrNewton-#{o}-mt-#{2**r}x#{2**r}.png]
+  end
+end

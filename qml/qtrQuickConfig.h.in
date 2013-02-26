@@ -1,0 +1,15 @@
+/* qtrQuickConfig.h.in --- 
+ * 
+ * Author: Julien Wintz
+ * Created: Tue Jan 29 20:00:19 2013 (+0100)
+ * Version: 
+ * Last-Updated: Tue Jan 29 20:02:20 2013 (+0100)
+ *           By: Julien Wintz
+ *     Update #: 4
+ */
+
+/* Change Log:
+ * 
+ */
+
+#define qtrQuickImportPath QString("@CMAKE_CURRENT_SOURCE_DIR@")
