@@ -1,10 +1,8 @@
 # QTrace
 
-QTrace is a proof of concept project aiming at using concurrency to render fractal images with an emphasis on logic and graphric interfaces separation, using Qt for the logic interface and Qml for the graphic interface.
+QTrace is a proof of concept project aiming at using concurrency to render fractal images with an emphasis on logic and graphric interfaces separation, using Qt for the logic interface and Qml for the graphic interface. QTrace can easily be extended to handle any kind of raytracing methods.
 
 ![Screenshot](http://jwintz.me/images/qtrace.png)
-
-QTrace can easily be extended to handle any kind of raytracing methods.
 
 ## Build
 
