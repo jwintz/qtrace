@@ -12,14 +12,22 @@
 ##
 ### Code:
 
-cmake_minimum_required(VERSION 3.3.2)
+cmake_minimum_required(VERSION 3.0.2)
 
-######################################################################
+####################################################################
 
 project(qtr)
 
 ## #################################################################
-##
+## Install prefix
+## #################################################################
+
+if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+  set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_SOURCE_DIR}/install" CACHE PATH "${PROJECT_NAME} install prefix" FORCE)
+endif(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+
+## #################################################################
+## Output directory setup
 ## #################################################################
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
@@ -27,7 +35,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 ## #################################################################
-##
+## Beautifying
 ## #################################################################
 
 mark_as_advanced(CMAKE_BUILD_TYPE)
