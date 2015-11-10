@@ -39,6 +39,10 @@ add_library(${PROJECT_NAME} SHARED
 qt5_use_modules(${PROJECT_NAME} Core)
 qt5_use_modules(${PROJECT_NAME} Gui)
 
+if(UNIX AND NOT APPLE)
+  target_link_libraries(${PROJECT_NAME} bsd)
+endif(UNIX AND NOT APPLE)
+
 ## ###################################################################
 ## Install rules - targets
 ## ###################################################################

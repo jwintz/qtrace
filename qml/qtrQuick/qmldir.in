@@ -12,7 +12,7 @@
 ##
 ### Code:
 
-module QtrQuick
+module qtrQuick
 
 ## ###################################################################
 ## QML defined QML types

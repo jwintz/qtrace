@@ -14,6 +14,10 @@
 
 #include "qtrTiler.h"
 
+#if defined(Q_OS_LINUX)
+#include <bsd/stdlib.h>
+#endif
+
 class qtrTilerPrivate
 {
 public:

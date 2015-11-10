@@ -13,7 +13,7 @@
 // Code:
 
 import  QtQuick 2.0
-import QtrQuick 1.0
+import qtrQuick 1.0
 
 Item {
 
