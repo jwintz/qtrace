@@ -1,21 +1,16 @@
-/* qtrTiler.cpp --- 
- * 
- * Author: Julien Wintz
- * Copyright (C) 2008-2011 - Julien Wintz, Inria.
- * Created: Thu Jan 24 12:13:01 2013 (+0100)
- * Version: $Id$
- * Last-Updated: Mon Jan 28 15:23:11 2013 (+0100)
- *           By: Julien Wintz
- *     Update #: 153
- */
+// Version: $Id$
+//
+//
 
-/* Commentary: 
- * 
- */
+// Commentary:
+//
+//
 
-/* Change log:
- * 
- */
+// Change Log:
+//
+//
+
+// Code:
 
 #include "qtrTiler.h"
 
@@ -88,8 +83,11 @@ qtrTileList qtrTiler::tile(void)
 	int k = arc4random() % tiles.count();
 	qtrTile t = tiles.value(k);
 	tiles.remove(k);
-	shuffled.append(t); 
+	shuffled.append(t);
     }
 
     return shuffled;
 }
+
+//
+// qtrTiler.cpp ends here

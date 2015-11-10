@@ -1,16 +1,16 @@
-/* qtrQuickPlugin.h --- 
- * 
- * Author: Julien Wintz
- * Created: Tue Jan 29 17:22:36 2013 (+0100)
- * Version: 
- * Last-Updated: Tue Jan 29 18:21:48 2013 (+0100)
- *           By: Julien Wintz
- *     Update #: 9
- */
+// Version: $Id$
+//
+//
 
-/* Change Log:
- * 
- */
+// Commentary:
+//
+//
+
+// Change Log:
+//
+//
+
+// Code:
 
 #pragma once
 
@@ -24,3 +24,6 @@ class qtrQuickPlugin : public QQmlExtensionPlugin
 public:
     void registerTypes(const char *);
 };
+
+//
+// qtrQuickPlugin.h ends here

@@ -1,30 +1,25 @@
-### CMakeLists.txt --- 
-## 
-## Author: Julien Wintz
-## Copyright (C) 2008-2011 - Julien Wintz, Inria.
-## Created: Tue Jan 22 12:07:46 2013 (+0100)
 ## Version: $Id$
-## Last-Updated: Tue Jan 29 18:55:43 2013 (+0100)
-##           By: Julien Wintz
-##     Update #: 27
+##
 ######################################################################
-## 
-### Commentary: 
-## 
+##
+### Commentary:
+##
 ######################################################################
-## 
-### Change log:
-## 
+##
+### Change Log:
+##
 ######################################################################
+##
+### Code:
 
-cmake_minimum_required(VERSION 2.8.10)
+cmake_minimum_required(VERSION 3.3.2)
 
 ######################################################################
 
 project(qtr)
 
 ## #################################################################
-## 
+##
 ## #################################################################
 
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
@@ -32,7 +27,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 ## #################################################################
-## 
+##
 ## #################################################################
 
 mark_as_advanced(CMAKE_BUILD_TYPE)
@@ -70,3 +65,6 @@ add_subdirectory(src)
 add_subdirectory(qml)
 add_subdirectory(app)
 add_subdirectory(bench)
+
+######################################################################
+### CMakeLists.txt ends here

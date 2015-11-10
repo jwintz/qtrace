@@ -1,21 +1,16 @@
-/* qtrSolver.tpp --- 
- * 
- * Author: Julien Wintz
- * Copyright (C) 2008-2011 - Julien Wintz, Inria.
- * Created: Thu Jan 24 11:18:45 2013 (+0100)
- * Version: $Id$
- * Last-Updated: Sat Jan 26 00:14:38 2013 (+0100)
- *           By: Julien Wintz
- *     Update #: 42
- */
+// Version: $Id$
+//
+//
 
-/* Commentary: 
- * 
- */
+// Commentary:
+//
+//
 
-/* Change log:
- * 
- */
+// Change Log:
+//
+//
+
+// Code:
 
 #include <math.h>
 
@@ -69,3 +64,6 @@ template <typename T> T qtrSolveNewton(qtrPolynomial<T> polynomial, T guess, int
 
     return c_guess;
 }
+
+//
+// qtrSolver.tpp ends here

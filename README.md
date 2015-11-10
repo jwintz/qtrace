@@ -15,7 +15,7 @@ QTrace is a proof of concept project aiming at using concurrency to render fract
 
 Computes root of z^3-20 in R and roots of z^3-20 in C.
 
-    $ ./bin/qtrNewtonSolver   
+    $ ./bin/qtrNewtonSolver
 
 ### Newton writer single threaded
 
@@ -31,7 +31,7 @@ Computes fractal image z^3-1 in C.
     $ time ./bin/qtrNewtonWriter-mt 3 800 800 qtrNewton-mt.png # [UNIX]
     $ time ./bin/qtrNewtonWriter-mt 3 800 800 qtrNewton-mt.png && qlmanage -p qtrNewton-st.png >& /dev/null # [MAXC]
 
-### Newton viewer 
+### Newton viewer
 
 Renders fractal image in viewport multi threaded.
 

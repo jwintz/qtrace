@@ -1,21 +1,16 @@
-/* main.cpp --- 
- * 
- * Author: Julien Wintz
- * Copyright (C) 2008-2011 - Julien Wintz, Inria.
- * Created: Tue Jan 22 12:10:05 2013 (+0100)
- * Version: $Id$
- * Last-Updated: Fri Jan 25 23:37:42 2013 (+0100)
- *           By: Julien Wintz
- *     Update #: 374
- */
+// Version: $Id$
+//
+//
 
-/* Commentary: 
- * 
- */
+// Commentary:
+//
+//
 
-/* Change log:
- * 
- */
+// Change Log:
+//
+//
+
+// Code:
 
 #include <qtrMath/qtrPolynomial.h>
 #include <qtrMath/qtrSolver.h>
@@ -43,3 +38,6 @@ int main(int argc, char **argv)
 
     return 0;
 }
+
+//
+// main.cpp ends here

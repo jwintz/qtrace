@@ -1,18 +1,22 @@
-### CMakeLists.txt --- 
-## 
-## Author: Julien Wintz
-## Created: Mon Jan 28 12:12:40 2013 (+0100)
-## Version: 
-## Last-Updated: Tue Jan 29 20:59:18 2013 (+0100)
-##           By: Julien Wintz
-##     Update #: 22
+## Version: $Id$
+##
 ######################################################################
-## 
+##
+### Commentary:
+##
+######################################################################
+##
 ### Change Log:
-## 
+##
 ######################################################################
+##
+### Code:
 
 project(qtrNewtonViewer)
+
+## #################################################################
+## Build rules
+## #################################################################
 
 qt5_add_resources(${PROJECT_NAME}_QRC main.qrc)
 
@@ -24,3 +28,12 @@ qt5_use_modules(${PROJECT_NAME} Quick)
 qt5_use_modules(${PROJECT_NAME} Widgets)
 
 target_link_libraries(${PROJECT_NAME} qtrCore)
+
+## #################################################################
+## Install rules - targets
+## #################################################################
+
+install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
+
+######################################################################
+### CMakeLists.txt ends here

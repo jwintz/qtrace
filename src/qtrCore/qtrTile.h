@@ -1,21 +1,16 @@
-/* qtrTile.h --- 
- * 
- * Author: Julien Wintz
- * Copyright (C) 2008-2011 - Julien Wintz, Inria.
- * Created: Thu Jan 24 12:00:08 2013 (+0100)
- * Version: $Id$
- * Last-Updated: Fri Jan 25 15:44:55 2013 (+0100)
- *           By: Julien Wintz
- *     Update #: 124
- */
+// Version: $Id$
+//
+//
 
-/* Commentary: 
- * 
- */
+// Commentary:
+//
+//
 
-/* Change log:
- * 
- */
+// Change Log:
+//
+//
+
+// Code:
 
 #pragma once
 
@@ -70,7 +65,7 @@ public:
 
 #pragma mark -
 #pragma mark Image setup
-    
+
     void setImage(const QImage& image);
 
 private:
@@ -78,3 +73,6 @@ private:
 };
 
 typedef QVector<qtrTile> qtrTileList;
+
+//
+// qtrTile.h ends here

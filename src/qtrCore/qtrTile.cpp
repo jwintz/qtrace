@@ -1,21 +1,16 @@
-/* qtrTile.cpp --- 
- * 
- * Author: Julien Wintz
- * Copyright (C) 2008-2011 - Julien Wintz, Inria.
- * Created: Thu Jan 24 13:19:16 2013 (+0100)
- * Version: $Id$
- * Last-Updated: Fri Jan 25 15:47:46 2013 (+0100)
- *           By: Julien Wintz
- *     Update #: 90
- */
+// Version: $Id$
+//
+//
 
-/* Commentary: 
- * 
- */
+// Commentary:
+//
+//
 
-/* Change log:
- * 
- */
+// Change Log:
+//
+//
+
+// Code:
 
 #include "qtrTile.h"
 
@@ -31,7 +26,7 @@ public:
 
 qtrTile::qtrTile(void) : d(new qtrTilePrivate)
 {
-    
+
 }
 
 qtrTile::qtrTile(const QRect& tile, const QRect& whole) : d(new qtrTilePrivate)
@@ -50,7 +45,7 @@ qtrTile::qtrTile(const qtrTile& other) : d(new qtrTilePrivate)
 qtrTile::~qtrTile(void)
 {
     delete d;
-    
+
     d = NULL;
 }
 
@@ -122,3 +117,6 @@ void qtrTile::setImage(const QImage& image)
 {
     d->image = image;
 }
+
+//
+// qtrTile.cpp ends here

@@ -1,3 +1,17 @@
+// Version: $Id$
+//
+//
+
+// Commentary:
+//
+//
+
+// Change Log:
+//
+//
+
+// Code:
+
 import QtQuick 2.0
 
 Item {
@@ -15,7 +29,7 @@ Item {
         width: 200;
         height: 200;
 
-        anchors.centerIn: parent;        
+        anchors.centerIn: parent;
 
         Image {
             id: background;
@@ -27,7 +41,7 @@ Item {
             y: 20;
 
             source: "qtrGauge_needle.png"
-            
+
             transform: Rotation {
                 origin.x: 2.5;
                 origin.y: 80;
@@ -42,7 +56,7 @@ Item {
                 }
             }
         }
-        
+
         Image {
           anchors.centerIn: background;
           source: "qtrGauge_center.png";
@@ -89,3 +103,6 @@ Item {
         }
     }
 }
+
+//
+// qtrGauge.qml ends here

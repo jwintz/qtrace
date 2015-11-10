@@ -1,16 +1,16 @@
-/* qtrCanvas.cpp --- 
- * 
- * Author: Julien Wintz
- * Created: Mon Jan 28 20:40:25 2013 (+0100)
- * Version: 
- * Last-Updated: Tue Feb 26 11:04:44 2013 (+0100)
- *           By: Julien Wintz
- *     Update #: 157
- */
+// Version: $Id$
+//
+//
 
-/* Change Log:
- * 
- */
+// Commentary:
+//
+//
+
+// Change Log:
+//
+//
+
+// Code:
 
 #include "qtrCanvas.h"
 
@@ -51,7 +51,7 @@ public:
 
 public:
     int thread_cur;
-    int thread_max; 
+    int thread_max;
 
  public:
     qtrCanvas *q;
@@ -87,7 +87,7 @@ void qtrCanvasPrivate::render(void)
 	qWarning() << Q_FUNC_INFO << "No render method set";
 	return;
     }
-    
+
     this->future = QtConcurrent::map(this->tiles, this->render_method);
     this->future_watcher.setFuture(this->future);
 }
@@ -236,3 +236,6 @@ void qtrCanvas::geometryChanged(const QRectF& current, const QRectF& previous)
 }
 
 #include "qtrCanvas.moc"
+
+//
+// qtrCanvas.cpp ends here

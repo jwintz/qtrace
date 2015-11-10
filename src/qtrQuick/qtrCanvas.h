@@ -1,16 +1,16 @@
-/* qtrCanvas.h --- 
- * 
- * Author: Julien Wintz
- * Created: Mon Jan 28 20:39:34 2013 (+0100)
- * Version: 
- * Last-Updated: Wed Jan 30 15:32:21 2013 (+0100)
- *           By: Julien Wintz
- *     Update #: 107
- */
+// Version: $Id$
+//
+//
 
-/* Change Log:
- * 
- */
+// Commentary:
+//
+//
+
+// Change Log:
+//
+//
+
+// Code:
 
 #pragma once
 
@@ -39,7 +39,7 @@ class qtrCanvas : public QQuickPaintedItem
 
 #pragma mark -
 #pragma Progress monitoring properties
-    
+
     Q_PROPERTY(int minProgressValue READ minProgressValue NOTIFY minProgressValueChanged)
     Q_PROPERTY(int maxProgressValue READ maxProgressValue NOTIFY maxProgressValueChanged)
     Q_PROPERTY(int curProgressValue READ curProgressValue NOTIFY curProgressValueChanged)
@@ -47,14 +47,14 @@ class qtrCanvas : public QQuickPaintedItem
 public:
      qtrCanvas(QQuickItem *parent = 0);
     ~qtrCanvas(void);
-    
+
 public:
     void paint(QPainter *painter);
 
 #pragma mark -
 #pragma Render method management
 
-    int     newtonOrder(void);    
+    int     newtonOrder(void);
     void setNewtonOrder(int order);
 
     void setRenderMethod(qtrRenderer::qtrRenderMethod method);
@@ -100,3 +100,6 @@ protected:
 private:
     qtrCanvasPrivate *d;
 };
+
+//
+// qtrCanvas.h ends here

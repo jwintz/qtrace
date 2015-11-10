@@ -1,27 +1,21 @@
-/* main.cpp --- 
- * 
- * Author: Julien Wintz
- * Copyright (C) 2008-2011 - Julien Wintz, Inria.
- * Created: Thu Jan 24 12:40:15 2013 (+0100)
- * Version: $Id$
- * Last-Updated: Mon Jan 28 12:37:26 2013 (+0100)
- *           By: Julien Wintz
- *     Update #: 289
- */
+// Version: $Id$
+//
+//
 
-/* Commentary: 
- * 
- */
+// Commentary:
+//
+//
 
-/* Change log:
- * 
- */
+// Change Log:
+//
+//
+
+// Code:
 
 #include <QtConcurrent>
 #include <QtCore>
 #include <QtDebug>
 #include <QtGui>
-#include <QtWidgets>
 
 #include <qtrCore/qtrRenderer.h>
 #include <qtrCore/qtrTile.h>
@@ -29,7 +23,7 @@
 
 int main(int argc, char **argv)
 {
-    QApplication application(argc, argv);
+    QCoreApplication application(argc, argv);
 
     if(application.arguments().count() < 4+1) {
         qDebug() << "Usage:" << argv[0] << "order" << "width" << "height" << "output";
@@ -79,3 +73,6 @@ int main(int argc, char **argv)
 
     return 0;
 }
+
+//
+// main.cpp ends here

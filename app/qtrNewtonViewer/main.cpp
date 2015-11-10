@@ -1,16 +1,16 @@
-/* main.cpp --- 
- * 
- * Author: Julien Wintz
- * Created: Mon Jan 28 12:15:05 2013 (+0100)
- * Version: 
- * Last-Updated: Wed Feb 27 16:28:50 2013 (+0100)
- *           By: Julien Wintz
- *     Update #: 87
- */
+// Version: $Id$
+//
+//
 
-/* Change Log:
- * 
- */
+// Commentary:
+//
+//
+
+// Change Log:
+//
+//
+
+// Code:
 
 #include <qtrCore>
 #include <qtrQuick>
@@ -49,3 +49,6 @@ int main(int argc, char *argv[])
 
     return application.exec();
 }
+
+//
+// main.cpp ends here

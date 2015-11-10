@@ -1,21 +1,16 @@
-/* main.cpp --- 
- * 
- * Author: Julien Wintz
- * Copyright (C) 2008-2011 - Julien Wintz, Inria.
- * Created: Fri Jan 25 23:48:53 2013 (+0100)
- * Version: $Id$
- * Last-Updated: Sat Jan 26 01:08:11 2013 (+0100)
- *           By: Julien Wintz
- *     Update #: 9
- */
+// Version: $Id$
+//
+//
 
-/* Commentary: 
- * 
- */
+// Commentary:
+//
+//
 
-/* Change log:
- * 
- */
+// Change Log:
+//
+//
+
+// Code:
 
 #include <QtConcurrent>
 #include <QtCore>
@@ -50,3 +45,6 @@ int main(int argc, char **argv)
 
     return 0;
 }
+
+//
+// main.cpp ends here

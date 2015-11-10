@@ -1,16 +1,16 @@
-### CMakeLists.txt --- 
-## 
-## Author: Julien Wintz
-## Created: Mon Jan 28 20:26:10 2013 (+0100)
-## Version: 
-## Last-Updated: Wed Jan 30 15:15:55 2013 (+0100)
-##           By: Julien Wintz
-##     Update #: 26
+## Version: $Id$
+##
 ######################################################################
-## 
+##
+### Commentary:
+##
+######################################################################
+##
 ### Change Log:
-## 
+##
 ######################################################################
+##
+### Code:
 
 project(qtrQuick)
 
@@ -42,3 +42,12 @@ qt5_use_modules(${PROJECT_NAME} Gui)
 qt5_use_modules(${PROJECT_NAME} Quick)
 
 target_link_libraries(${PROJECT_NAME} qtrCore)
+
+## ###################################################################
+## Install rules - targets
+## ###################################################################
+
+install(TARGETS ${PROJECT_NAME} DESTINATION lib)
+
+######################################################################
+### CMakeLists.txt ends here

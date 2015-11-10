@@ -12,7 +12,10 @@
 ##
 ### Code:
 
-configure_file(qmldir.in ${CMAKE_CURRENT_SOURCE_DIR}/qmldir @ONLY)
+*.h ident
+*.cpp ident
+*.tpp ident
+*.cmake ident
 
 ######################################################################
-### CMakeLists.txt ends here
+### .gitattributes ends here

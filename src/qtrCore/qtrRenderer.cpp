@@ -1,21 +1,16 @@
-/* qtrRenderer.cpp --- 
- * 
- * Author: Julien Wintz
- * Copyright (C) 2008-2011 - Julien Wintz, Inria.
- * Created: Thu Jan 24 11:53:42 2013 (+0100)
- * Version: $Id$
- * Last-Updated: Wed Jan 30 16:41:15 2013 (+0100)
- *           By: Julien Wintz
- *     Update #: 303
- */
+// Version: $Id$
+//
+//
 
-/* Commentary: 
- * 
- */
+// Commentary:
+//
+//
 
-/* Change log:
- * 
- */
+// Change Log:
+//
+//
+
+// Code:
 
 #include "qtrRenderer.h"
 
@@ -41,17 +36,17 @@ void qtrRenderer::newton(qtrTile& tile)
     const qreal y_max = +1.5;
     const qreal x_min = y_min*ratio;
     const qreal x_max = y_max*ratio;
-    
+
     const qreal d_x = -(qreal)w/2.0;
     const qreal d_y = -(qreal)h/2.0;
     const qreal s_x = (x_max-x_min)/w;
     const qreal s_y = (y_max-y_min)/h;
-    
+
     QImage image(tile.tileSize().width(), tile.tileSize().height(), QImage::Format_RGB32);
     image.fill(Qt::black);
 
     typedef std::complex<double> complex;
-    
+
     qtrPolynomial<complex> z("z");
     qtrPolynomial<complex> f = z;
     for(unsigned int k = 1; k < qtrRenderer::newtonOrder; k++)
@@ -67,9 +62,9 @@ void qtrRenderer::newton(qtrTile& tile)
             sin(k*((2*M_PI)/qtrRenderer::newtonOrder)));
 
     for(int x = tile.tilePos().x(); x < tile.tilePos().x()+tile.tileSize().width(); x++) {
-        
+
         for(int y = tile.tilePos().y(); y < tile.tilePos().y()+tile.tileSize().height(); y++) {
-            
+
             int i = x-tile.tilePos().x();
             int j = y-tile.tilePos().y();
 
@@ -83,3 +78,6 @@ void qtrRenderer::newton(qtrTile& tile)
 
     tile.setImage(image);
 }
+
+//
+// qtrRenderer.cpp ends here
