@@ -18,6 +18,8 @@
 #include <bsd/stdlib.h>
 #endif
 
+#include <QtCore>
+
 class qtrTilerPrivate
 {
 public:

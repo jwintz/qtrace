@@ -35,6 +35,12 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 ## #################################################################
+## Generate compilation databases
+## #################################################################
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS "ON")
+
+## #################################################################
 ## Beautifying
 ## #################################################################
 

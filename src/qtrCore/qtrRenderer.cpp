@@ -22,6 +22,7 @@ unsigned int qtrRenderer::newtonOrder = 2;
 QImage qtrRenderer::newtonImage(qtrTile& tile)
 {
     newton(tile);
+
     return tile.image();
 }
 
