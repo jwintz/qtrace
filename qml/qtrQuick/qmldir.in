@@ -26,8 +26,5 @@ QtrGauge 1.0 qtrGauge.qml
 
 plugin qtrQuick @CMAKE_BINARY_DIR@/lib
 
-# - QtrCanvas 1.0
-# - QtrGauge  1.0
-
 ######################################################################
 ### qmldir.in ends here
